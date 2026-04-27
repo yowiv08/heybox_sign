@@ -2,7 +2,7 @@
 
 ## 环境要求
 
-- Python 3
+- nodejs
 - 已准备好有效的 `heybox_ck`
 
 ## 快速开始
@@ -10,7 +10,7 @@
 直接运行：
 
 ```bash
-python heybox_sign.py
+python heybox_sign.js
 ```
 
 脚本启动后会先输出当前版本，例如：
@@ -31,7 +31,7 @@ python heybox_sign.py
 
 ```bash
 heybox_ck='pkey=xxx; x_xhh_tokenid=xxx;'
-python heybox_sign.py
+python heybox_sign.js
 ```
 
 ### 多账号
@@ -49,7 +49,7 @@ pkey=bbb; x_xhh_tokenid=bbb;
 
 ### 1. 准备脚本
 
-你可以把 `heybox_sign.py` 放进自己的仓库，或者直接放到青龙的脚本目录中。
+你可以把 `heybox_sign.js` 放进自己的仓库，或者直接放到青龙的脚本目录中。
 
 ### 2. 新建环境变量
 
