@@ -79,31 +79,6 @@ heybox_ck = pkey=ccc; x_xhh_tokenid=ccc;
 
 表示每天 9:05 执行一次。
 
-
-## 接口说明
-
-脚本内部依赖：
-
-```text
-GET https://hkey.qcciii.com/hkey
-```
-
-请求参数：
-
-1. `path`：小黑盒接口路径，例如 `/task/sign_v3/sign`
-2. `time`：Unix 秒级时间戳
-3. `imei`：设备标识
-4. `heybox_id`：用户 ID
-
-返回字段：
-
-1. `result.hkey`
-2. `result.version`
-3. `result.build`
-4. `result.updated_at`
-
-这个接口如果不可用，签到脚本会直接失败。
-
 ## 运行输出示例
 
 ```text
@@ -118,7 +93,3 @@ GET https://hkey.qcciii.com/hkey
 
 完成: 1/1
 ```
-
-## 说明
-
-当前项目主要聚焦签到流程，欢迎开发者在此基础上继续补充和完善其他任务接口。
